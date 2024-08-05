@@ -448,6 +448,9 @@ svg{
   transition: .5s;
   z-index: 1;
 }
+.mobile-links{
+  display: none;
+}
 
 .icon,.badge{
   position: absolute;
@@ -1149,7 +1152,7 @@ footer .cont{
 }
 
 
-@media (max-width:1366px)and (min-width:1024px){
+/* @media (max-width:1366px)and (min-width:1024px){
   .first-container{
     padding-top: 15rem;
     width: 85%;
@@ -1199,7 +1202,7 @@ footer .cont{
   .toolcircle::before{
     height: 80%;
   }
-}
+} */
 
 @media only screen and (max-width:1024px){
   .right-menu,.music-disc{
@@ -1341,6 +1344,28 @@ footer .cont{
   height: 50px;
   align-items: center;
   justify-content: center;
+}
+.profile .img-con{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile .img-con img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.p-circle{
+  right:10%;
+  top: 10%;
+  transform:rotate(25deg) translate(10%,-50%);
+
+}
+.toolcircle{
+  height: 80%;
+}
+.toolcircle::before{
+  height: 80%;
 }
 
 .home.active .arrow{
@@ -1608,5 +1633,6 @@ footer .cont{
     }
     .nav-inner{
       width: 90%;
-    } 
+    }
+  
 }

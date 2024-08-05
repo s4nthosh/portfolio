@@ -31,6 +31,14 @@ const Section = ({links}) => {
 
         
     </div>
+    <div className='mobile-links'>
+      
+        {links.map((link)=>
+        <a href={link.link} className='mobile-link' key={link.id}><img className='icon' src={link.icon} alt='broken'/>
+            <img src={link.icon_Outer} className='badge' alt='badge'/></a>
+        )}
+      
+    </div>
     </section>
   
   )
