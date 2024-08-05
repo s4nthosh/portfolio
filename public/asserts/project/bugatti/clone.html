@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUGATTI clone</title>
+    <link rel="icon" href="asserts/logo1.png">
+    <link rel="stylesheet" href="clone.css">
+</head>
+<body>
+    <div class="mouse-inner"></div>
+    <div class="mouse-outer"></div>
+
+<!-- menubar -->
+    <div class="menubar" id='navmenu'>
+        <button class="navclose"onclick='navmenuclose()'>close</button>
+        <div class="navcon">
+            <div class="menufirst">
+                <div class="num">
+                    <a href="#1" id="navbx1"><h1>01</h1><span class="span">BUGATTI LIFESTYLE</span></a>
+                </div>
+                <div class="num">
+                <a href="#2" id="navbx2" ><h1>02</h1><span class="span"> bugatti heritage</span></a>
+            </div>
+            <div class="num">
+                <a href="#3" id="navbx3" ><h1>03</h1><span class="span">MODELS</span></a>
+            </div>
+            <div class="num">
+                <a href="#4" id="navbx4" ><h1>04</h1><span class="span">customization</span></a>
+            </div>
+            <div class="num">
+                <a href="#5" id="navbx5" ><h1>05</h1><span class="span">OWNERSHIP</span></a>
+            </div>
+            </div>
+        </div>
+    <!-- audiofile -->
+<audio loop id="buaudio">
+    <source src="asserts/bgt-homepage.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+    <div class="main" id="mainhide">
+        <!-- top -->
+        <div class="header">
+            <nav>
+                <div class="img">
+                <img src="asserts/logo.svg" width="100%" height="100%">
+            </div>
+                <div class="ham"onclick='navmenu()'><img src="asserts/logo.png" width="25px" height="25px"></div>
+            </nav>
+        </div>
+        <!-- bottom -->
+            <div class="footer">
+                <div class="con">
+                    <h6>ENGLISH</h6>
+                    <div class="s"><img src="asserts/logo1.png" width="25px " height="25px"></div>
+        
+                    <button  class="audiobtn" id="play" onclick="audio()">AUDIO OFF</button>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="box2">
+                    <div class="icon">
+                    <img src="asserts/fc.svg" width="25px" height="25px"><h6>21.47 - 25.19 1/100 km</h6>
+                    </div>
+                    <div class="icon">
+                    <img src="asserts/c02.svg" width="25px" height="25px"><h6>486.72 - 571.63 g/km</h6>
+                    </div>
+                    <div class="arrow">
+                        <img class="aicon" onclick="openbx()" src="asserts/arrow-1.svg" width="20px" height="20px">
+                    </div>
+                </div>
+            </div>  
+                
+            
+            
+        <!-- hidebox -->
+
+        <div class="contentbu" id="conbg">
+            <div class="hide" id="hide">
+                <div class="close">
+                <button onclick="closebx()" class="closebx"><img src="asserts/arrow-1.svg" width="20px" height="20px" ></button>
+            </div>
+                <div class="hidebx">
+                    
+                    <h3>CHIRON/CHIRON SPORT (WLTP)</h3>
+                    <p> <img class="icon" src="asserts/fc.svg" width="25px" height="25px"> Fuel Consumption (combined): 25.19 1/100 km
+                    </p>
+                    <p> <img class="icon" src="asserts/c02.svg" width="25px" height="25px"> CO2 emissions (combined) 571.63 g/km</p>
+                    
+                </div>
+                <div class="hidebx">
+                    <h3>W16 MISTRAL</h3>
+                    <p> <img class="icon" src="asserts/fc.svg" width="25px" height="25px"> Fuel Consumption (combined): Not applicable
+                    </p>
+                    <p> <img class="icon" src="asserts/c02.svg" width="25px" height="25px">CO2 emissions (combined) Not applicable</p>
+                </div>
+                <div class="hidebx">
+                    <h3>CHIRON SUPER SPOR</h3>
+                    <p> <img class="icon" src="asserts/fc.svg" width="25px" height="25px"> Fuel Consumption (combined): 21.47 1/100 km</p>
+                    <p><img class="icon" src="asserts/c02.svg" width="25px" height="25px">CO2 emissions (combined) 486.72 g/km</p>
+                </div>
+                <div class="hidebx">
+                    <h3>CENTODIECI</h3>
+                    <p> <img class="icon" src="asserts/fc.svg" width="25px" height="25px">Fuel Consumption (combined): 21.47 1/100 km</p>
+                    <p><img class="icon" src="asserts/c02.svg" width="25px" height="25px">CO2 emissions (combined) NA</p>
+                </div>
+                <div class="hidebx">
+                    <h3>BOLIDE</h3>
+                    <p> <img class="icon" src="asserts/fc.svg" width="25px" height="25px">Fuel Consumption (combined): Not applicable
+                    </p>
+                    <p><img class="icon" src="asserts/c02.svg" width="25px" height="25px"> CO2 emissions (combined) Not applicable</p>
+                </div>
+            </div>
+                            
+        </div>
+     
+        <div class="scroll">
+            <!-- firstpage -->
+            <section class="page one">
+                <video src="asserts/bugatti_intro_30_v14.mp4" autoplay muted loop playsinline></video>
+                <div class="text">
+                    <div class="t">
+                    <h1>IF COMPARABLE<br>IT IS NO LONGER BUGATTI</h1>
+                    <h6>ETTORE BUGATTI</h6>
+                    <p>
+                        Immerse yourself in a world<br>
+                        of unparalleled artistry.</p>
+                    <div class="scrollani">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h6>SCROLL</h6>
+                    </div>
+
+                </div>
+            </div>
+            </section>
+
+            <!-- secondpage -->
+            <section  class="page two">
+                <video src="asserts/h_background-desktop2.mp4" autoplay muted loop playsinline></video>
+                <div id="two" class="box-cont">
+                    <div class="child">
+                        <div class="child-con">
+                        <h2>adidas X BUGATTI</h2>
+                        <p>Crafted for speed</p>
+                    </div>
+                        <img src="asserts/cards/axb-miau-card.jpg" width="100%" height="100%" >
+
+                    </div>
+                    <div class="child">
+                        <div class="child-con">
+                            <h2>BOLIDE</h2>
+                        <p>W16 power unleashed</p>
+                        </div>
+                        <video poster="asserts/cards/axb-miau-card.jpg" src="asserts/cards/homepage-bolide-card-video.mp4" width="100%" height="100%" autoplay muted loop playsinline></video>
+
+                    </div>
+                    <div class="child">
+                        <div class="child-con">
+                            <h2>W16 MISTRAL</h2>
+                        <p>The ultimate roadster</p>
+                        </div>
+                        <video src="asserts/cards/Homepage-mistral-card-video2.mp4" width="100%" height="100%" autoplay muted loop playsinline></video>
+                        
+                    </div>
+                    <div class="child">
+                        <div class="child-con">
+                            <h2>SUR MESURE</h2>
+                        <p>Pinnacle of customization</p>
+                        </div>
+                        <video src="asserts/cards/homepage-sur-mesure-card-video2.mp4" width="100%" height="100%" autoplay muted loop playsinline></video>
+                        
+                    </div>
+                    <div class="child">
+                        <div class="child-con">
+                            <h2>CHAMPAGNE CARBON</h2>
+                        <p>The taste of excellence</p>
+                        </div>
+                        <video src="asserts/cards/homepage-champagne-carbon-card-video.mp4" width="100%" height="100%" autoplay muted loop playsinline></video>
+                        
+                    </div>
+                    <div class="child">
+                        <div class="child-con">
+                            <h2>NEWS</h2>
+                        <p>Go in depth</p>
+                        </div>
+                        <img src="asserts/cards/homepage_newsroom_card.png" width="100%" height="100%">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- thirdpage -->
+            <section class="page three">
+                <div class="tcon">
+                    <p>Further information on official fuel consumption figures
+                         and the official specific CO2 emissions of new passenger
+                          cars can be found in the “Guide on the fuel economy,
+                           CO2 emissions and power consumption of new passenger car models”,
+                            which is available free of charge at all sales dealerships and from DAT
+                             Deutsche Automobil Treuhand GmbH,
+                         Hellmuth-Hirth-Str. 1, D-73760 Ostfildern, Germany and at www.dat.de.</p>
+                         <h5>© 2024 BUGATTI Automobiles S.A.S.</h5>   
+                </div>
+                <div class="menulast">
+                    <a href="#">BUGATTI LIFESTYLE</a>
+                    <a href="#">bugatti-heritage</a>
+                    <a href="#">MODELS</a>
+                    <a href="#">customization</a>
+                    <a href="#">OWNERSHIP</a>
+                    <a href="#">news-zeitgeist</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<!-- javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+<script>
+
+
+
+        var scrollele=document.querySelector('.scroll')
+        var sections =gsap.utils.toArray(".scroll section")
+
+        var buaudio =document.getElementById('buaudio')
+        var count=0
+        var play = document.getElementById('play')
+        var scrollbox=document.getElementById('two')
+        var bghide= document.getElementById('conbg')
+        var hideopt = document.getElementById('hide')
+        var navmenuopn =document.getElementById('navmenu')
+        var mainhide = document.getElementById('mainhide')
+        var cursordotouter = document.querySelector('.mouse-outer')
+        var cursordot=document.querySelector('.mouse-inner')
+        var cursordothover =document.querySelector('.mouse-hover')
+
+
+
+
+
+        // mousecustom
+
+        window.addEventListener('mousemove',function(e){
+
+             const posX =e.clientX;
+             const posY =e.clientY;
+
+
+             cursordot.style.left =`${posX}px`;
+             cursordot.style.top =`${posY}px`;
+
+
+
+             cursordotouter.animate({
+                left:`${posX}px`,
+                top:`${posY}px`,
+             },{duration:500,fill:"forwards"})
+        })
+
+
+        let links = Array.from(document.querySelectorAll('a'))
+
+        links.forEach(link =>{
+            link.addEventListener('mouseover',()=>{
+                cursordot.classList.add('hover')
+            })
+            link.addEventListener('mouseleave',()=>{
+                cursordot.classList.remove('hover')
+            })
+            
+        })
+
+
+        // open/close boxopion
+        function openbx(){
+            bghide.style.display='flex'
+            hideopt.style.display='flex'
+        }
+        function closebx(){
+            bghide.style.display='none'
+            hideopt.style.display='none'
+        }
+
+        function navmenu(){
+            navmenuopn.style.display="block"
+            mainhide.style.display='none'
+        }
+        function navmenuclose(){
+            navmenuopn.style.display="none"
+            mainhide.style.display='block'
+        }
+
+        // audiofunction
+        function audio(){
+            if(count==0){
+                count=1
+                buaudio.play()
+                play.innerHTML='AUDIO ON'
+            }else{
+                count=0
+                buaudio.pause()
+                play.innerHTML ='AUDIO OFF'
+            }
+        }
+
+
+// scroll-smooth
+const lenis = new Lenis()
+
+function raf(time){
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
+
+// scroll effect
+
+
+// scrollfunction
+        // scrollele.addEventListener('wheel',(event)=>{
+        //     event.preventDefault()
+        //     scrollele.scrollLeft += event.deltaY
+        // })
+
+let t1= gsap.timeline({
+            defaults:{
+                ease:'none'
+            },
+            scrollTrigger: {
+                trigger: scrollele,
+                pin:true,
+                scrub:2,
+                end:()=>'+='+scrollele.offsetWidth,
+                // markers:true
+            }
+        })
+
+        t1.to(scrollele,{
+        xPercent:-66.66
+    })
+    sections.forEach((stop,index)=>{
+        t1
+            .to(stop.querySelector('.t'),{
+                yPercent:50,
+                opacity:0,
+                scrollTrigger:{
+                    trigger:stop.querySelector('.t'),
+                    start:' left center',
+                    end:'center center',
+                    containerAnimation:t1,
+                    scrub:true,
+                }                
+            })
+
+        .to(stop.querySelector('.box-cont'),{
+        xPercent:-80,
+        opacity:1,
+        scrollTrigger:{
+            trigger:stop.querySelector('.box-cont'),
+                    start:' right center',
+                    end:'right center',
+                    containerAnimation:t1,
+                    scrub:true,
+            
+            
+        }
+    })
+
+    })
+    
+
+
+
+
+    // let t2= gsap.timeline({
+    //         defaults:{
+    //             ease:'none'
+    //         },
+    //         scrollTrigger: {
+    //             trigger: scrollbox,
+    //             pin:true,
+    //             scrub:40,
+    //             start:()=>'+='+scrollbox.offsetWidth
+    //         }
+    //     })
+    //     t2.to(scrollbox,{
+    //     xPercent:-66.66
+    // })
+
+</script>
+</html>

@@ -1,0 +1,613 @@
+@font-face{
+    font-family: myfont;
+    src: url(assert/banquette.ttf);
+}
+*{
+    margin:0 ;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    
+
+}
+nav ul li{
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav button{
+    background-color: red;
+    border: none;
+    width:140px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+}
+.firstpage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+.mimg{
+    text-align: end;
+}
+.mimg img{
+    max-width: 1354px;
+    height: 100vh;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    margin: 0 10%;
+    padding: 10px 0;
+    max-width: 550px;
+    text-transform: capitalize;
+}
+.vimg{
+    position: absolute;
+    right: 30%;
+    top: 40px;
+}
+.content h6{
+    font-size: clamp(10px,5vw,20px);
+    font-weight: 100;
+    padding: 20px 0;
+    color: green;
+}
+.content h2{
+    color: gray;
+    font-size: clamp(50px,5vw,100px);
+    font-family: myfont;
+    font-weight: 100;
+}
+.content p{
+    padding: 10px 0;
+    color: gray;
+    font-size: clamp(10px,5vw,20px);
+    
+}
+.content .search{
+    background-color: white;
+    border: 2px solid gray;
+    height: 50px;
+    display: flex; 
+    justify-content: space-between;
+}
+.content input{
+    width: 100%;
+    text-transform: capitalize;
+    padding: 0 10px;
+    outline: none;
+    font-size: clamp(10px,5vw,20px);
+    border: none;
+
+}
+.content button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.glass{
+    height: clamp(60px,8vw,150px);
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(11.8px);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.glass ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+}
+
+/* second page */
+.second{
+    height: 100%;
+}
+.second .cont{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.con{
+    background-color: black;
+    color: white;
+    width: 75%;
+    display: inline-block;
+    position: relative;
+    text-align: start;
+    text-transform: capitalize;
+}
+.con h6{
+    margin:0 10%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top: 1.5%;
+    padding: 0 25px;
+    font-size: 20px;
+}
+.con p{
+    margin: 0 10%;
+    font-size: 20px;
+    padding: 55px 0;
+}
+.con h1{
+    margin: 0 10%;
+    font-family: myfont;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 80px;
+    font-weight: 100;
+    border-top: 2px solid gray;
+    border-right:2px solid gray;
+}
+.t{
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+
+}
+.t h1{
+    font-family:myfont;
+    font-size: 60px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    width: 33.3%;
+    text-align: center;
+}
+h1 .sa{
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+.con1{
+    background-color: yellowgreen;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    
+}
+.con1 h2{
+    transform: rotate(180deg);
+    font-size: 30px;
+}
+
+/* third */
+.third{
+    height: 100%;
+    background-color: white;
+}
+.topic{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: start;
+    margin: 5% 0;
+    padding: 20px 0;
+    text-transform: capitalize;
+
+}
+.topic h1{
+    margin: 0 10%;
+    font-family: myfont;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 80px;
+    font-weight: 100;
+    border-top: 2px solid gray;
+    border-right:2px solid gray;
+}
+.topic h6{
+    margin:0 10%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    padding: 0 25px;
+    font-size: 20px;
+}
+.pc{
+    display: flex;
+    align-items: center;
+}
+.topic p{
+    margin: 0 10%;
+    font-size: 20px;
+    padding: 55px 0;
+}
+.topic button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.151);
+    padding: 20px 0;
+}
+.building{
+    background-color: rgb(255, 255, 255);
+    max-width: 360px;
+    overflow: hidden;
+    position: relative;
+}
+.building img{
+    width: 360px;
+}
+.amount{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding:10px 20px;
+}
+.details{
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.d2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    align-items: center;
+    padding: 10px 0;
+}
+.details h1,h2{
+    padding: 20px 0;
+}
+.d2 button{
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.dt{
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.dt h1{
+    font-family: myfont;
+    font-weight: 100;
+    font-size: 80px;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    display: inline-block;
+    padding: 20px 60px;
+}
+.dt h6{
+    position: absolute;
+    top: 8%;
+    left: 47%;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+}
+.dt p{
+    padding: 50px;
+    font-size: 20px;
+
+}
+
+/* fourth */
+
+.fourth{
+    background-color: white;
+    height: 100%;
+}
+.parent{
+    display: grid;
+    background-color: white;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
+    gap: 10px;
+}
+.child{
+    background-color: white;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    background-color:white;
+    padding: 10px 50px;
+    text-transform: capitalize;
+    position: relative;
+}
+.frame h1{
+    font-family: myfont;
+    font-size: 80px;
+    font-weight: 100;
+    padding: 0 20px;
+    border-top: 2px solid gray;
+    border-right:2px solid gray ;
+    display: inline-block;
+}
+.frame h6{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 100;
+    top: 0%;
+    padding: 0 25px;
+    position: absolute;
+
+}
+.frame p{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 700px;
+}
+.frame button{
+    text-transform: capitalize;
+    width: 100px;
+    height: 40px;
+    margin: 0 25px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white
+}
+.box2 img{
+    object-fit:cover;
+}
+.box4 img{
+    object-fit:cover;
+}
+
+
+/* final */
+.final{
+    background-color: white;
+    height: 100%;
+}
+.cmd{
+    display: flex;
+    height: 100%;
+    
+}
+.commandbox{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+.cmd1{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.boxx{
+    min-width: 250px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    border: 1px solid gray;
+    padding: 20px;
+}
+.boxx h1{
+    color: blue;
+    font-size: 40px;
+}
+.boxx p{
+    padding: 20px 0;
+    color: gray;
+}
+hr{
+    margin: 30px 0;
+}
+
+.c{
+    background-color:white;
+    position: relative;
+    padding: 20px 0;
+}
+.c h6{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 10px;
+    padding: 0 20px;
+    background-color:white;
+
+}
+.c h1{
+    font-size: 80px;
+    display: inline-block;
+    font-family: myfont;
+    font-weight: 100;
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid grey;
+    border-right: 2px solid gray;
+}
+.c h3{
+    padding: 20px;
+    font-size: 30px;
+}
+.c p{
+    padding: 20px;
+    font-weight: 100;
+}
+.c button{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin: 0 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.fhead{
+    padding: 20px;
+    position: relative;
+}
+.ft{
+    text-align: center;
+}
+.fhead h1{
+    font-size: 80px;
+    font-family: myfont;
+    font-weight: 100;
+    padding: 20px 80px;
+    background-color:white;
+    display: inline-block;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+.fhead h6{
+    font-size: 20px ;
+    font-weight: 100;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    padding: 0px 20px;
+    top: 10px;
+    left: 46%;
+}
+.fhead p{
+    padding: 20px;
+    font-weight: 100;
+}
+.ucommand{
+    height: 70%;
+    margin: 10px 80px;
+    
+}
+.uc{
+    display: grid;
+    gap: 10px;
+    height: 100%;
+    grid-template: 1fr 1fr /1fr 1fr;
+}
+.userc{
+    background-color: white;
+}
+.userc:hover{
+    box-shadow: 0px 0px 20px 0px black;
+}
+.circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 20px;
+    border: 2px solid orange;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.de{
+    padding: 10px;
+}
+
+.sub{
+    background-color: white;
+    text-align: center;
+}
+.sub h1{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: myfont;
+    border: none;
+    
+
+}
+.i{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.i .info{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    padding: 0 20px;
+    outline: none;
+    border: 2px solid gray;
+}
+.i button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+}
+.i button:hover{
+    box-shadow: 0px 0px 20px 0px black;
+}
