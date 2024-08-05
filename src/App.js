@@ -4,7 +4,7 @@ import Footer from './Footer.js'
 import Main from './Main.js'
 import About from './About.js'
 import Project from './Project.js';
-import {Routes,Route, useLocation,useNavigate} from 'react-router-dom'
+import { HashRouter as Routes,Route, useLocation,useNavigate} from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react';
 import Pagetransition from './Pagetransition.js';
 import Loading from './Loading.js';
