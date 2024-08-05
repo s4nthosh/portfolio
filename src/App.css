@@ -1416,7 +1416,5 @@ footer .cont{
 }
 
 @media only screen and (max-width:480px) {
-  .App{
-    display: none;
-  }
+  
 }
