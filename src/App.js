@@ -24,26 +24,26 @@ function App() {
 
   const links =[{
     id:1,
-    icon:'/asserts/links-icons/g-mail.svg',
-    icon_Outer:'/asserts/links-icons/badge-email.svg',
+    icon:'asserts/links-icons/g-mail.svg',
+    icon_Outer:'asserts/links-icons/badge-email.svg',
     link:'mailto:santhoshshr43@gmail.com'
   },
   {
     id:2,
-    icon:'/asserts/links-icons/instagram.svg',
-    icon_Outer:'/asserts/links-icons/badge-instagram.svg',
+    icon:'asserts/links-icons/instagram.svg',
+    icon_Outer:'asserts/links-icons/badge-instagram.svg',
     link:'https://www.instagram.com/ig_santhosh.exe/?next=%2F'
   },
   {
     id:3,
-    icon:'/asserts/links-icons/linkedin.svg',
-    icon_Outer:'/asserts/links-icons/badge-linkedin-fa.svg',
+    icon:'asserts/links-icons/linkedin.svg',
+    icon_Outer:'asserts/links-icons/badge-linkedin-fa.svg',
     link:'https://www.linkedin.com/in/santhosh-kumar-11201a242/'
   },
   {
     id:4,
-    icon:'/asserts/links-icons/icons8-github.svg',
-    icon_Outer:'/asserts/links-icons/github.svg',
+    icon:'asserts/links-icons/icons8-github.svg',
+    icon_Outer:'asserts/links-icons/github.svg',
     link:'https://github.com/s4nthosh'
   },
 ]
@@ -51,50 +51,50 @@ const datas =[
   {
     id:1,
     name:"Nike-Slider",
-    data:"/asserts/project/nike/nike.html",
-    thumbnail:'/asserts/project/thumbnail/nikeslider.PNG'
+    data:"asserts/project/nike/nike.html",
+    thumbnail:'asserts/project/thumbnail/nikeslider.PNG'
   },
   {
     id:2,
     name:"Bugatti-clone",
-    data:"/asserts/project/bugatti/clone.html",
-    thumbnail:'/asserts/project/thumbnail/bugatti.PNG'
+    data:"asserts/project/bugatti/clone.html",
+    thumbnail:'asserts/project/thumbnail/bugatti.PNG'
   },
   {
     id:3,
     name:"Foodslider",
     data:"https://food-slider.web.app/",
-    thumbnail:'/asserts/project/thumbnail/foodslider.PNG'
+    thumbnail:'asserts/project/thumbnail/foodslider.PNG'
   },
   {
     id:4,
     name:"Coffee",
-    data:"/asserts/project/coffee/test.html",
-    thumbnail:'/asserts/project/thumbnail/coffee.PNG'
+    data:"asserts/project/coffee/test.html",
+    thumbnail:'asserts/project/thumbnail/coffee.PNG'
   }, 
   {
     id:5,
     name:"Building",
-    data:"/asserts/project/building/sample.html",
-    thumbnail:'/asserts/project/thumbnail/building.PNG'
+    data:"asserts/project/building/sample.html",
+    thumbnail:'asserts/project/thumbnail/building.PNG'
   },
   {
     id:6,
     name:"watch",
-    data:"/asserts/project/swatch/sample.html",
-    thumbnail:'/asserts/project/thumbnail/watch.PNG'
+    data:"asserts/project/swatch/sample.html",
+    thumbnail:'asserts/project/thumbnail/watch.PNG'
   }, 
 ]
 const music =[
   {
     id:1,
     name:'disc',
-    image:'/asserts/disc.svg',
+    image:'asserts/disc.svg',
   },
   {
     id:2,
     name:'line',
-    image:'/asserts/line.svg'
+    image:'asserts/line.svg'
   },
 ]
 
@@ -102,42 +102,42 @@ const tools = [
   {
     id:1,
     tool:'React',
-    icon:'/asserts/toolicons/react.svg'
+    icon:'asserts/toolicons/react.svg'
   },
   {
     id:2,
     tool:'Figma',
-    icon:'/asserts/toolicons/figma.svg'
+    icon:'asserts/toolicons/figma.svg'
   },
   {
     id:3,
     tool:'Gsap',
-    icon:'/asserts/toolicons/gsap.svg'
+    icon:'asserts/toolicons/gsap.svg'
   },
   {
     id:4,
     tool:'Html',
-    icon:'/asserts/toolicons/htmllogo.svg'
+    icon:'asserts/toolicons/htmllogo.svg'
   },
   {
     id:5,
     tool:'Css',
-    icon:'/asserts/toolicons/csslogo.svg'
+    icon:'asserts/toolicons/csslogo.svg'
   },
   {
     id:6,
     tool:'JavaScript',
-    icon:'/asserts/toolicons/jslogo.svg'
+    icon:'asserts/toolicons/jslogo.svg'
   },
   {
     id:7,
     tool:'Python',
-    icon:'/asserts/toolicons/pylogo.svg'
+    icon:'asserts/toolicons/pylogo.svg'
   },
   {
     id:8,
     tool:'Django',
-    icon:'/asserts/toolicons/djlogo.svg'
+    icon:'asserts/toolicons/djlogo.svg'
   },
 ]
 

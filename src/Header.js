@@ -31,7 +31,7 @@ const Header = ({title,currentPath,handleClick,isdark,setisDark,music,musicOn,ha
         </div>
         <div className='music-disc'>
             <div className={`background-music` } title='music'  onClick={handleMusic} >
-            <audio src='/asserts/ACloseFriend.mp3' ref={getaudio} autoPlay loop></audio>
+            <audio src='asserts/ACloseFriend.mp3' ref={getaudio} autoPlay loop></audio>
             {music.map((prop)=>
                 <div className={`music ${prop.name} ${musicOn ? 'on':'off'}`} key={prop.id}>
                   
