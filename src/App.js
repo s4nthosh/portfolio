@@ -211,7 +211,7 @@ useEffect(() => {
       
       <Header title='Santhosh Kumar' getaudio={getaudio} musicOn={musicOn} handleMusic={handleMusic} setmusicOn={setmusicOn} music={music} currentPath={currentPath} isdark={isdark} setisDark={setisDark} handleClick={handleClick} />
       <Routes>
-        <Route path='/portfolio' element={<Main links={links} datas={datas.slice(0,4)} handleClick={handleClick}/>}/>
+        <Route path='/' element={<Main links={links} datas={datas.slice(0,4)} handleClick={handleClick}/>}/>
         <Route path='/about' element={<About tools ={tools} isOpen={isOpen} setisOpen={setisOpen} />}/>
         <Route path='/project' element={<Project datas={datas}/>}/>
       
