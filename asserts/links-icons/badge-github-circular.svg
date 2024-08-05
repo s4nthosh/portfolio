@@ -1,0 +1,21 @@
+
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="10" r="2" fill="#112969"/>
+  <circle cx="110" cy="60" r="2" fill="#112969"/>
+  <circle cx="10" cy="60" r="2" fill="#112969"/>
+  <circle cx="60" cy="110" r="2" fill="#112969"/>
+  <g clip-path="url(#clip0_391_748)">
+    <!-- Existing SVG paths and shapes -->
+  </g>
+  <defs>
+    <path id="circlePath" d="M60,10 a50,50 0 1,1 -0.1,0"/>
+    <clipPath id="clip0_391_748">
+      <rect width="100" height="100" fill="white" transform="translate(10 10)"/>
+    </clipPath>
+  </defs>
+  <text font-size="12" fill="#112969" font-family="Arial">
+    <textPath href="#circlePath">
+      GitHub 
+    </textPath>
+  </text>
+</svg>

@@ -1,0 +1,595 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    cursor: none;
+}
+.main{
+    overflow-x: hidden;
+    height: 100%;
+    background-color: black;
+
+}
+
+.mouse-inner,.mouse-outer,.mouse-hover
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 60;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+.mouse-inner{
+    width: 15px;
+    height: 15px;
+    background-color:blue;
+    z-index: 61;
+    transition: width 0.2s,height 0.2s;;
+    transform: translate(-50%-50%);
+}
+
+.mouse-inner.hover{
+    width: 30px;
+    height: 30px;
+    transition: width 0.2s,height 0.2s;
+    background-color: blue;
+}
+.mouse-outer{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(2, 2, 2, 0.562);
+}
+
+
+/* menu */
+.menubar{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    display: none;
+    transition: 2s;
+}
+
+.navcon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+}
+.menufirst{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.num{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+
+}
+.num a{
+    text-decoration: none;
+    font-style: none;
+    display: flex;
+    transition: .5s;
+    color: white;
+}
+#navbx2{
+    margin-right: 250px;
+    animation: menu2 1s ease-in-out 1 forwards;
+    opacity: 0;
+}
+#navbx4{
+    margin-left: 350px;
+    animation: menu4 1s ease-in-out 1 forwards;
+    opacity: 0;
+}
+#navbx3{
+    margin-right: 100px;
+    animation: menu3 1s ease-in-out 1 forwards;
+    opacity: 0;
+}
+#navbx5{
+    margin-right: 300px;
+    animation: menu5 1s ease-in-out 1 forwards;
+    opacity: 0;
+}
+
+a h1{
+    display: inline-block;
+    font-size: 30px;
+    align-self: flex-start;
+    padding: 30px 0;
+    font-weight: 100;
+}
+
+a:hover{
+    color: blue;
+    
+}
+.num .span{
+    font-size: clamp(40px,7vw,127px);
+    font-style: none;
+    font-weight:500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#navbx1{
+    animation: menu1 1s ease-in-out 1 forwards;
+    opacity: 0;
+}
+@keyframes menu1 {
+    from{
+        opacity: 0;
+        transform: translate(-1000px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes menu2 {
+    from{
+        opacity: 0;
+        transform: translate(-1200px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
+@keyframes menu3 {
+    from{
+        opacity: 0;
+        margin-left: 1800px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes menu4 {
+    from{
+        opacity: 0;
+        margin-left: 2000px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes menu5 {
+    from{
+        opacity: 0;
+        transform: translate(-1000px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.header{
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .img{
+    height: 25px;
+    width: 100%;
+
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    bottom: 40px;
+    left: 0;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+.con{
+    display: flex;
+    justify-content:space-between;
+    max-width: 1130px;
+    width: 100%;
+    backdrop-filter:blur(11px);
+    align-items: center;
+    color: white;
+    background-color: rgba(52, 53, 53, 0.555);
+    margin: 0px 20px;
+    padding: 7px 64px;
+}
+.con h6{
+    padding: 11px;
+}
+.audiobtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 11px;
+}
+
+
+/* secondbox */
+
+.footer2{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    bottom:0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.box2{
+    display: flex;
+    justify-content:space-evenly;
+    max-width: 1130px;
+    width: 100%;
+    height: 30px;
+    backdrop-filter:blur(11px);
+    align-items: center;
+    color: white;
+    background-color: rgba(52, 53, 53, 0.555);
+    margin: 0px 20px;
+    padding: 0px 64px;
+    
+}
+.box2 .icon{
+    display: flex;
+    margin-left: -50px;
+    align-items: center;
+}
+.icon img{
+    padding: 0 10px;
+}
+.icon h6{
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.aicon{
+    rotate: 270deg;
+}
+.arrow{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    align-items: center;
+
+}
+/* hide-content */
+.contentbu{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    bottom:0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hide{
+    background-color:  rgba(52, 53, 53, 0.555);
+    width: 100%;
+    /* height: 100%; */
+    max-height: 450px;
+    max-width: 1130px;
+    display: none;
+    backdrop-filter:blur(11px);
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 7px 64px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    justify-content: start;
+}
+
+.hide::-webkit-scrollbar{
+    background-color: rgba(52, 53, 53, 0.555);
+    backdrop-filter:blur(21px);
+    width: 1px;
+}
+.hide::-webkit-scrollbar-thumb{
+    background-color: rgb(243, 248, 248);
+    width: 1px;
+}
+.close{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    height: 40px;
+
+}
+
+.hidebx{
+    width: 50%;
+    height: 50%;
+    max-width: 1130px;
+    color: white;
+}
+.hidebx .icon{
+    padding: 0 10px;
+}
+.hidebx h3{
+    font-size: clamp(10px,3vw,20px);
+    padding: 5px 0px;
+}
+.hidebx p{
+    display: flex;
+    
+    align-items: center;
+    padding: 5px 0px;
+    justify-content: start;
+}
+
+
+
+
+.closebx{
+    background: transparent;
+    outline: none;
+    border: none;
+    rotate: 90deg;
+}
+.scroll{
+    display: flex;
+    width: 300vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section{   
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* firstpage */
+.one{
+    background-color: black;
+    position: relative;
+
+}
+.one video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100svh;
+    
+}
+.t{
+    text-align: center;
+}
+.t h1{
+    font-size: clamp(34px,5vw,64px);
+    font-weight: 500;
+    padding: 20px 0;
+}
+.t h6{
+    font-size: 13px;
+    padding: 2px 0;
+}
+.t p{
+    font-size: 23px;
+    padding: 12px 0;
+}
+.scrollani{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.scrollani span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: -5px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    animation: scroll 2s infinite;
+}
+
+.scrollani span:nth-child(2){
+    animation-delay: -.2s;
+}
+.scrollani span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+.scrollani h6{
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg)translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg)translate(10px,10px);
+    }
+}
+
+
+/* secondpage */
+.two{
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.two video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.box-cont{
+    width: 2400px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 20%;
+}
+.child{
+    width: 350px;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+    transition: all .8s ease-in-out;
+
+}
+.child:hover{
+    transform: scale(1.05);
+}
+.child-con{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.child-con h2{
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: 100px;
+}
+.child-con p{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 100px;
+}
+
+.child img{
+    object-fit: cover;
+    width: 350px;
+    
+    height: 100%;
+}
+
+.child video{
+    object-fit: cover;
+    height: 100%;
+    width: 350px;
+
+}
+.three{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.three .tcon{
+    color: white;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 5px 0;
+
+}
+.tcon p{
+    text-align: center;
+    font-size: clamp(8px,3vw,20px);
+    padding: 5px 0;
+    font-weight: 400;
+}
+.tcon h5{
+    font-size: camp(8px,3vw,20px);
+    padding: 5px 0;
+    font-weight: 200;
+}
+.menulast{
+    padding: 5px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    flex-wrap: wrap;
+}
+.menulast a{
+    font-size: clamp( 10px,4vw,20px);
+    padding: 5px;
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+}
+.menulast a:hover{
+    color: blue;
+}
