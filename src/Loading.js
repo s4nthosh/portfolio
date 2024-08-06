@@ -6,7 +6,7 @@ const Loading = () => {
       <div className='loadingscreen'>
         <div className='load-con'>
           <div className='video'>
-            <video src='asserts/rotine.mp4'loop muted autoPlay></video>
+            <video src='asserts/rotine.mp4' loop muted autoPlay></video>
           </div>
           <h1>loading...</h1>
         </div>
