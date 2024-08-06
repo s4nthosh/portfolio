@@ -11,7 +11,7 @@ import Loading from './Loading.js';
 
 
 function App() {
-
+  const[popUp,setPopup] = useState(true)
   const location = useLocation()
   const currentPath = location.pathname
   const[isdark,setisDark]=useState(false)
@@ -188,19 +188,14 @@ useEffect(() => {
   // Simulate a data fetch
   setTimeout(() => {
     isLoading(false);
-  }, 2000);
+  }, 8000);
 }, []);
 
 
 
-// if(loading){
-//   return <Loading/>
-// }
-
-
-
-
-
+if(loading){
+  return <Loading/>
+}
 
 
   return (
@@ -211,7 +206,7 @@ useEffect(() => {
       
       <Header title='Santhosh Kumar' getaudio={getaudio} musicOn={musicOn} handleMusic={handleMusic} setmusicOn={setmusicOn} music={music} currentPath={currentPath} isdark={isdark} setisDark={setisDark} handleClick={handleClick} />
       <Routes>
-        <Route path='/' element={<Main links={links} datas={datas.slice(0,4)} handleClick={handleClick}/>}/>
+        <Route path='/' element={<Main popUp={popUp} setPopup={setPopup} links={links} datas={datas.slice(0,4)} handleClick={handleClick}/>}/>
         <Route path='/about' element={<About tools ={tools} isOpen={isOpen} setisOpen={setisOpen} />}/>
         <Route path='/project' element={<Project datas={datas}/>}/>
       

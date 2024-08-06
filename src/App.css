@@ -9,6 +9,89 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  color: white;
+}
+.loadingscreen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.load-con{
+  width: min-content;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.load-con .video{
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid white;
+  border-radius: 50%;
+}
+.load-con .video::before{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  content: '';
+  border: 1px solid red;
+  outline: 2px dotted white;
+  border-radius: 50%;
+  animation: loadspinright 20s linear infinite;
+}
+@keyframes loadspinright {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.load-con .video::after{
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: '';
+  outline: 2px dashed white;
+  border: 2px solid greenyellow;
+  border-radius: 50%;
+  animation: loadspinleft 10s linear infinite;
+}
+@keyframes loadspinleft {
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+.load-con .video video{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.load-con h1{
+  margin-top: 1rem;
+  font-weight: 200;
+  animation: fade 2s linear infinite;
+  opacity: 0;
+}
+@keyframes fade {
+  to{
+    opacity:1;
+
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -51,7 +134,9 @@ html{
   .menu-nav{
     display: none;
   }
-  
+ .pop-up-msg{
+  display: none;
+ } 
 .wrapper{
   width: 100%;
   height: 100%;
@@ -1441,6 +1526,28 @@ footer .cont{
 }
 
 @media only screen and (max-width:480px) {
+  .wrapper{
+    padding: .5rem 0.8rem;
+  }
+  .logo a{
+    font-size: .8rem;
+  }
+  .nav-content{
+    padding: 0 1rem;
+  }
+  .home.active .arrow{
+    left:90%;
+  }
+  .arrow p{
+    font-size: .9rem;
+  }
+  .about.active .arrow{
+    left: 40%;
+  }
+  .project.active .arrow{
+    left:90%;
+  }
+  
   .first-content h1{
     font-size:2.5rem;
     }
@@ -1549,6 +1656,9 @@ footer .cont{
       margin-top: 9rem;
       font-size: 2rem;
   }
+  .about-section .inner{
+    width: 100%;
+  }
   .about-section .inner h1 span svg{
     position: absolute;
     left: -110%;
@@ -1579,12 +1689,15 @@ footer .cont{
 
   }
   .toolcircle{
-    height: 60%;
-    width: 80%;
+    height: 50%;
+    width: 90%;
   }
   .toolcircle::before{
-    height: 60%;
-    width: 80%;
+    height: 50%;
+    width: 90%;
+  }
+  .toolcontent .tool-li{
+    font-size: 1rem;
   }
   .d h1{
     font-size: 2rem;
@@ -1634,5 +1747,84 @@ footer .cont{
     .nav-inner{
       width: 90%;
     }
+
+
+    .circle:nth-child(1){
+      width: 130vw;
+      height: 130vw;
+      left: -20%;
+      object-fit: cover;
+     }
+     .circle:nth-child(2){
+      width: 150vw;
+      height: 150vw;
+      object-fit: cover;
+     }
+     .circle:nth-child(3){
+      width: 120vw;
+      height: 120vw;
+      left: -20%;
+      object-fit: cover;
+    }
+    .circle:nth-child(4){
+      width: 90vw;
+      height: 90vw;
+      left: 50%;
+      object-fit: contain;
+    }
+    .pop-up-msg{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 111;
+      background-color: rgba(31, 29, 29, 0.452);
+      backdrop-filter: blur(15px);
+      opacity: 1;
+      display: block;
+     }
+     .pop-up-msg.closepop{
+      opacity: 0;
+      display: none;
+     }
+     .popup{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     .pop-up-content{
+      width: 80%;
+      border-radius: 15px;
+      background-color: white;
+      overflow: hidden;
+     }
+     .pop-up-content h1{
+      font-size: 1rem;
+      font-weight: 100;
+      padding: 10px;
+     }
+     .pop-up-content button{
+      all: unset;
+      width: 50px;
+      height: 50px;
+      background-color: springgreen;
+      border-radius: 0 15px 0 15px;
+      border: 2px solid white;
+      outline: 2px solid springgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+     }
+     .warning-svg{
+      background-color: yellow;
+      text-align: center;
+     }
+     .warning-svg svg{
+      font-size: 2rem;
+     }
   
 }
