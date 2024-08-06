@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4749f47a.css",
-    "main.js": "/portfolio/static/js/main.15492677.js",
+    "main.css": "/portfolio/static/css/main.aaa36841.css",
+    "main.js": "/portfolio/static/js/main.c7027e26.js",
     "static/media/NeueMontreal-Regular.otf": "/portfolio/static/media/NeueMontreal-Regular.140bfb4a71fe08805d92.otf",
     "index.html": "/portfolio/index.html",
-    "main.4749f47a.css.map": "/portfolio/static/css/main.4749f47a.css.map",
-    "main.15492677.js.map": "/portfolio/static/js/main.15492677.js.map"
+    "main.aaa36841.css.map": "/portfolio/static/css/main.aaa36841.css.map",
+    "main.c7027e26.js.map": "/portfolio/static/js/main.c7027e26.js.map"
   },
   "entrypoints": [
-    "static/css/main.4749f47a.css",
-    "static/js/main.15492677.js"
+    "static/css/main.aaa36841.css",
+    "static/js/main.c7027e26.js"
   ]
 }
